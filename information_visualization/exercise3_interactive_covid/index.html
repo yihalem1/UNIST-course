@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>COVID-19 Data Visualization</title>
+   <script src="https://d3js.org/d3.v6.min.js"></script>
+   <style>
+        #checkboxes {
+            border: 1px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+   </style>
+</head>
+<body>
+    <div id="checkboxes" style="height: 200px; overflow-y: auto; width: 200px;"></div>
+
+   <label for="dateFrom">Start Date:</label>
+   <input type="date" id="dateFrom">
+
+   <label for="dateTo">End Date:</label>
+   <input type="date" id="dateTo">
+
+   <label>Chart Type:</label>
+   <input type="radio" id="line" name="chartType" value="line" checked> 
+   <label for="line">Line</label>
+   <input type="radio" id="bar" name="chartType" value="bar">
+   <label for="bar">Bar</label>
+   
+   <div id="chart"></div>
+   <div id="legend"></div>
+
+   <script src="exercise3.js"></script>
+</body>
+</html>
